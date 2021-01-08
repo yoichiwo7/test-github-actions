@@ -16,5 +16,5 @@ jobs:
     - name: Build
       uses: docker://golang:1.15-alpine
       with:
-        entrypoint: bash -c
+        entrypoint: sh -c
         args: go build -v ./...
